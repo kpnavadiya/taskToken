@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "9bc067f1-4f4f-4689-954b-a13c06ec2552",
+		"name": "TaskToken",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetTokenDetails",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/version1/getTokenDetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"version1",
+						"getTokenDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CheckTokenBalance",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/version1/checkTokenBalance/0x916cD51D53C4FDb6683050C21F29d25AD0F394FE",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"version1",
+						"checkTokenBalance",
+						"0x916cD51D53C4FDb6683050C21F29d25AD0F394FE"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TransferToken",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"sender\": \"0x916cD51D53C4FDb6683050C21F29d25AD0F394FE\",\n    \"key\": \"cd8f5fa0a575f83522265496cbbb46987dc868fe6ba6c0c6c5fd0dbac7ef89ec\",\n    \"receiver\": \"0xFaCf24F52AaAD0c5D9d48B728f20aF81f60A93b9\",\n    \"tokenAmount\": 8000000000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/version1/transferToken",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"version1",
+						"transferToken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateWallet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/version1/createWallet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"version1",
+						"createWallet"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

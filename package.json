@@ -1,0 +1,18 @@
+{
+  "name": "task-token",
+  "version": "1.0.0",
+  "description": "building api for transfer token,create wallet, and check balance",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kp navadiya",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "ethereumjs-tx": "^2.1.2",
+    "express": "^4.17.1",
+    "web3": "^1.3.1"
+  }
+}
